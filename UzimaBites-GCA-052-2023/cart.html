@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UzimaBites | Healthy Meals
+     Kenya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Uzima<span>Bites</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="food">Home</a></li>
+            <li><a href="menu.html" class="menu">Menu</a></li>
+            <li><a href="cart.html"  class="cart" class="active">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <main class="container column-layout">
+        <h2 class="section-title">Review Your Order</h2>
+        
+        <div id="cart-display" class="cart-list">
+            </div>
+
+        <div class="summary-card">
+            <h3>Total: Ksh <span id="total-price">0</span></h3>
+        </div>
+
+        <section class="checkout-form-section">
+            <h2 class="section-title">Delivery Details</h2>
+            <form id="order-form" class="column-grid">
+                <div class="input-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="e.g. Juma Shariff" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="e.g. 0712 345 678" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Delivery Address / Apartment</label>
+                    <textarea id="address" rows="3" placeholder="e.g. Westlands, Nairobi - Rhapta Rd, Unit 4B" required></textarea>
+                </div>
+
+                <button type="button" class="btn-orange full-width" onclick="processOrder()">Complete My Order</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

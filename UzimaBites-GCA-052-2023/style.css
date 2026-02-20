@@ -1,0 +1,253 @@
+:root {
+    --accent: #ff6b35; 
+    --dark: #1a1a1a;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body { 
+    font-family: poppins; 
+    margin: 0;
+     background: var(--white); 
+    }
+ .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        background: white;
+ }
+    
+ .nav-links {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+  }
+    
+ @media (max-width: 600px) {
+    .nav-links {
+            font-size: 14px; 
+        }
+}
+
+.logo { 
+    font-weight: bold;
+     font-size: 24px;
+     }
+.logo span { 
+    color: var(--accent);
+ }
+
+.food{
+    text-decoration:none ;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+.menu{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+
+}
+.cart{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+
+}
+
+
+.dark-hero {
+    background: var(--dark); color: white;
+    display: flex;
+     align-items: center; 
+    padding: 20px 8%; gap: 50px;
+}
+h1 {
+    font-size: clamp(2rem, 8vw, 4rem); 
+    word-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.1;
+}
+
+.hero-content {
+    padding: 20px; 
+}
+
+.hero-btns { 
+    display: flex;
+     gap: 15px; 
+     margin-top: 30px; 
+    }
+.btn-orange { 
+    background: var(--accent);
+     color: white; 
+     padding: 12px 25px; 
+     border-radius: 25px;
+      text-decoration: none;
+      border: none;
+     }
+.btn-outline { 
+    border: 1px solid;
+    color: #ffeb3b; 
+    padding: 12px 25px; 
+    border-radius: 25px;
+     text-decoration: none; 
+    }
+ .btn-orange:hover {transform: translatey(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+ }
+
+.btn-outline:hover{ transform: translatey(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+.hero-image img { max-width: 200px;
+    border: 10px solid rgba(255,255,255,0.05);
+    border-radius: 70%;
+ }
+
+.top-notch {
+    text-align: center; 
+    padding: 60px 8%;
+ }
+ .category-grid {
+    display: flex;
+    flex-wrap: wrap; /* This is the secret! It lets cards move to the next line */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cat-card {
+    flex: 1 1 300px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px; 
+}
+
+.cat-card p {
+    width: 100%; 
+}
+
+
+.cat-card img { 
+    width: 150px;
+     height: 150px; 
+     border-radius: 50%;
+      margin-bottom: 20px; 
+      object-fit: cover;
+     }
+
+.cat-breakfast { 
+    background: #2d3e40;
+ }
+.cat-appetizers { 
+    background: #352f3d;
+ }
+.cat-desserts {
+     background: #312626; 
+    }
+
+.cat-card a {
+     color: var(--accent); 
+     text-decoration: none;
+      font-weight: bold;
+     }
+
+
+.menu-img {
+     width: 50%; 
+     height: 300px; 
+     object-fit: cover; 
+     border-radius: 10px;
+     }
+.card {
+     border: 1px solid #eee; 
+     padding: 15px; 
+     border-radius: 10px;
+      text-align: center; 
+    }
+    .order{
+        background-color: #ff6b35;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        color:#eee;
+    }
+    .section-title{
+        padding-left: 40px;
+        font-weight: 900;
+    }
+    .summary-card{
+        padding: 50px;
+    }
+    /* Checkout Page Specific Styles */
+.column-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.cart-list {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.checkout-form-section {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--dark);
+}
+
+.input-group input, .input-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
